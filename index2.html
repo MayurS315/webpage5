@@ -1,0 +1,167 @@
+<section class="banner">
+    <div class="container position-relative">
+        <div class="col-lg-12 col-md-10 col-sm-7">
+            <div class="row">
+                <div class="col-lg-6 col-sm-7 ps-3 banner-text">
+                    <h1>"The best place to find <br>the cheapest air fares"</h1>
+                    <h2>-every single time</h2>
+                </div>
+            </div>
+            <div class="row booking-forms">
+                <div class="col-lg-10 col-md-7 col-sm-4 pb-3">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <Flights class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-plane-departure pe-1"></i>Flights</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-shop pe-1"></i>Hotels</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-solid fa-car pe-1"></i>Cars</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">                       
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <form class="d-flex">
+                                <div class="form-outline px-1">
+                                    <input type="text" class="form-control ps-5" placeholder="Enter Origin City" />
+                                    <i class="fa-solid fa-location-dot ms-3"></i>
+                                </div>
+                                    <span class="m-2 arrow"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+                                <div class="form-outline px-1">
+                                    <input type="text" class="form-control ps-5" placeholder="Enter Destination City" />
+                                    <i class="fa-solid fa-location-dot ms-3"></i>
+                                </div>
+                                <div class="form-outline d-flex gy-3">
+                                    <input type="date" class="form-control ps-6"/>
+                                    <input type="date" class="form-control ps-6"/>
+                                </div>
+                                <div class="form-outline px-1">
+                                    <i class="fa-solid fa-location-dot ps-4"></i>
+                                    <select class="form-select ps-2" aria-label="Default select example">                                           
+                                        <option selected>1 passenger</option>
+                                        <option value="1">2 passengers</option>
+                                        <option value="2">3 passengers</option>
+                                        <option value="3">4 passengers</option>                                       
+                                      </select>
+                                      
+                                </div>
+                            </form>
+                            <div class="row">
+                                <h5>gjhkj</h5>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                            <form class="d-flex flex-md-row">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Origin City">
+                                </div>
+                                    <span class="m-2 arrow"><i class="fa-solid fa-arrow-right-arrow-left"
+                                    ></i></span>
+                                <div class="input-group">                                   
+                                    <span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+                                
+                                    <input type="text" class="form-control" placeholder="Enter Destination City">
+                                </div>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" placeholder="Enter Destination City">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                            <div class="container px-4">
+                                <div class="row gx-5">
+                                <div class="col">
+                                <div class="p-3 border bg-light">Custom column padding</div>
+                                </div>
+                                <div class="col">
+                                    <div class="p-3 border bg-light">Custom column padding</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                    
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+/* banner section */
+.banner{
+    width:100%;
+    height:700px;
+    position: relative;
+    background-image: url('/assets/img/banner2.jpg');
+    background-size: cover;
+}
+
+.banner .banner-text{
+    position: absolute;
+    top:10rem;
+}
+
+.banner .banner-text h1{
+    font-weight: 300;
+    font-size: 3.235rem;
+    color:#fff;
+}
+
+.banner .banner-text h2{
+    font-size:2rem;
+    color:#fff;
+}
+
+.banner .booking-forms{
+    position:absolute;
+    top:32rem;
+    width:100%;
+    height:auto;
+    background-color:#653073;
+}
+
+.banner .booking-forms .nav-item{
+    margin-top: 0;
+    margin-right:.925rem;
+    background-color:#503865;
+}
+.banner .booking-forms .nav-item .nav-link:hover,
+.banner .booking-forms .nav-item .nav-link.active{
+    background-color:#eb1b73;
+ 
+}
+.banner .booking-forms .nav-item .nav-link{
+    color:#fff;
+}
+
+.banner .booking-forms .flight-form .form-outline i{
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.arrow i{
+    color:#52a5cd;
+}
+
+.form-outline i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    pointer-events: none;
+  }
